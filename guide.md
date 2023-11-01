@@ -42,6 +42,9 @@
   > 部分功能演示：
 
 ![Alt text](image-15.png)
+![Alt text](image-21.png)
+![Alt text](image-23.png)
+![Alt text](image-24.png)
 ![Alt text](image-16.png)
 
 ## 2，第三方支付接入基本原理和流程
