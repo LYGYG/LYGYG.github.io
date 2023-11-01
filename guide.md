@@ -34,7 +34,7 @@
   > 产品架构图：
 
 ![Alt text](image-13.png)
-### 1.2，案例
+### 1.2，案例xx银行指标体系
 ![Alt text](image-12.png)
   > 项目建设过程：
 
