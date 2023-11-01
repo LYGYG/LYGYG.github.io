@@ -43,3 +43,5 @@
 
 ![Alt text](image-15.png)
 ![Alt text](image-16.png)
+
+## 2，Android和iOS差异
