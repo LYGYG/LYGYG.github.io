@@ -7,5 +7,5 @@
 - 听天由命 | 我在努力 | 顺其自然
 -  我还能咋样，就一直学学学呗！
 
-[LYGYG](/)
+[LYGYG](guide5)
 [Get Started](README)
