@@ -468,36 +468,75 @@ B 端产品，通常一开始就需要考虑权限系统的设计。因为，你
 ![Alt text](11.png)
 ## 24，数据治理怎样从建模入手 ，真正落地数据标准？
 ![Alt text](image-33.png)
+
 ![Alt text](image-26.png)
+
 ![Alt text](image-27.png)
+
 ![Alt text](image-28.png)
+
 ![Alt text](image-29.png)
+
 ![Alt text](image-30.png)
+
 ![Alt text](image-31.png)
+
 ![Alt text](image-32.png)
+
 ![Alt text](image-34.png)
+
 ![Alt text](image-35.png)
+
 ![Alt text](image-36.png)
+
 ![Alt text](image-37.png)
+
 ![Alt text](image-38.png)
+
 ![Alt text](image-39.png)
+
 ![Alt text](image-40.png)
+
 ![Alt text](image-41.png)
+
 ![Alt text](image-42.png)
+
 ![Alt text](image-43.png)
+
 ![Alt text](image-44.png)
+
 ![Alt text](image-45.png)
+
 ![Alt text](image-46.png)
+
 ![Alt text](image-47.png)
+
 ![Alt text](image-48.png)
+
 ![Alt text](image-49.png)
+
 ![Alt text](image-50.png)
+
 ![Alt text](image-51.png)
+
 ![Alt text](image-52.png)
+
 ![Alt text](image-53.png)
+
 ![Alt text](image-54.png)
+
 ![Alt text](image-55.png)
+
 ![Alt text](image-56.png)
+
 ![Alt text](image-57.png)
+
 ![Alt text](image-58.png)
 
+## 25，什么是元数据？
+元数据（Metadata）为描述数据的数据（data about data），主要是描述数据属性（property）的信息，用来支持如指示存储位置、历史数据、资源查找、文件记录等功能。简单来讲，元数据提供了关于数据的上下文，可以实现信息资源的有效发现、查找、一体化组织和对使用资源的有效管理。
+
+描述：元数据最基本的功能就是描述信息对象的内容属性等。
+发现：清晰全面地查看组织内的数据资产。
+检索：支持用户查找资源的功能。以图书馆的书为例，若把书里的正文内容视作主要数据，那么元数据就是该书的简介、目录。此外，图书馆还可以添加数据，提供图书类别、风格和唯一标识码，以便于更好地管理和检索。
+管理：通过添加元数据，明确数据的使用方式、用途以及共享的许可权限，确保组织/企业在数据集安全级别内跟踪、使用、共享数据，从而有助于符合法规要求。
