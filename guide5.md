@@ -1,6 +1,8 @@
 ## 1，信息模型
 ![Alt text](穗彩.png)
+
 ![Alt text](信息架构_00.png)
+
 ## 2，业务流程
 站点新增
 ![Alt text](站点新增.jpg)
