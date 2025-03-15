@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫码添加设备</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="app-container mx-auto">
+        <!-- 顶部导航栏 -->
+        <header class="bg-primary text-white p-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <button class="mr-3">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <h1 class="text-xl font-semibold">扫码添加</h1>
+            </div>
+            <div>
+                <button>
+                    <i class="fas fa-lightbulb"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="p-0 flex flex-col h-full">
+            <!-- 扫码区域 -->
+            <div class="flex-1 bg-black relative">
+                <!-- 模拟相机界面 -->
+                <div class="absolute inset-0 bg-black opacity-70"></div>
+                
+                <!-- 扫描框 -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-64 h-64 border-2 border-white rounded-lg relative">
+                        <div class="absolute top-0 left-0 w-8 h-2 bg-white"></div>
+                        <div class="absolute top-0 left-0 w-2 h-8 bg-white"></div>
+                        
+                        <div class="absolute top-0 right-0 w-8 h-2 bg-white"></div>
+                        <div class="absolute top-0 right-0 w-2 h-8 bg-white"></div>
+                        
+                        <div class="absolute bottom-0 left-0 w-8 h-2 bg-white"></div>
+                        <div class="absolute bottom-0 left-0 w-2 h-8 bg-white"></div>
+                        
+                        <div class="absolute bottom-0 right-0 w-8 h-2 bg-white"></div>
+                        <div class="absolute bottom-0 right-0 w-2 h-8 bg-white"></div>
+                        
+                        <!-- 扫描线动画 -->
+                        <div class="absolute left-0 right-0 h-0.5 bg-green-400 top-1/2 animate-pulse"></div>
+                    </div>
+                </div>
+                
+                <!-- 提示文本 -->
+                <div class="absolute top-1/4 left-0 right-0 text-center">
+                    <p class="text-white text-lg font-semibold">扫描设备二维码</p>
+                    <p class="text-gray-300 text-sm mt-2">请将摄像头对准设备上的二维码</p>
+                </div>
+                
+                <!-- 相册选择按钮 -->
+                <div class="absolute bottom-8 right-8">
+                    <button class="w-12 h-12 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+                        <i class="fas fa-images text-white text-xl"></i>
+                    </button>
+                </div>
+                
+                <!-- 闪光灯按钮 -->
+                <div class="absolute bottom-8 left-8">
+                    <button class="w-12 h-12 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+                        <i class="fas fa-bolt text-white text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 底部操作区 -->
+            <div class="bg-white p-4">
+                <div class="flex justify-between items-center mb-4">
+                    <button class="text-primary">
+                        <span class="flex items-center">
+                            <i class="fas fa-keyboard mr-1"></i>
+                            <span class="text-sm">手动输入</span>
+                        </span>
+                    </button>
+                    <button class="text-primary">
+                        <span class="flex items-center">
+                            <i class="fas fa-wifi mr-1"></i>
+                            <span class="text-sm">局域网搜索</span>
+                        </span>
+                    </button>
+                </div>
+                
+                <!-- 操作提示 -->
+                <div class="bg-blue-50 p-3 rounded-lg">
+                    <div class="flex items-start">
+                        <i class="fas fa-info-circle text-secondary mt-1 mr-2"></i>
+                        <div>
+                            <p class="text-xs text-gray-600">找不到二维码？请查看设备底部或背面的标签，或尝试使用手动输入SN码的方式添加设备。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 

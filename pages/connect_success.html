@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>连接成功</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="app-container mx-auto">
+        <!-- 主要内容区域 -->
+        <main class="h-full flex flex-col">
+            <!-- 成功内容区 -->
+            <div class="flex-1 flex flex-col items-center justify-center p-6">
+                <!-- 成功动画 -->
+                <div class="w-28 h-28 bg-green-100 rounded-full flex items-center justify-center mb-6 animate-pulse">
+                    <i class="fas fa-check-circle text-green-500 text-6xl"></i>
+                </div>
+                
+                <!-- 成功信息 -->
+                <h2 class="text-2xl font-bold mb-2">连接成功</h2>
+                <p class="text-gray-500 text-center mb-8">您的设备已成功添加到智能监控系统</p>
+                
+                <!-- 设备信息卡片 -->
+                <div class="w-full bg-white rounded-lg shadow-sm p-4 mb-8">
+                    <div class="flex items-center">
+                        <div class="relative mr-3">
+                            <div class="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-broadcast-tower text-2xl text-secondary"></i>
+                            </div>
+                            <div class="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-medium">智能基站</h4>
+                            <p class="text-xs text-gray-500">型号: SMART-BS-001</p>
+                            <div class="flex items-center mt-1">
+                                <span class="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded-full mr-2">在线</span>
+                                <span class="text-xs text-gray-500">SN: BS12345678</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 下一步提示 -->
+                <div class="w-full bg-blue-50 p-4 rounded-lg mb-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-info-circle text-secondary mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-sm">下一步操作</h4>
+                            <p class="text-xs text-gray-600 mt-1">您现在可以添加摄像头设备，或进行其他设置。基站可以连接多个摄像头，实现全方位监控。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 底部操作按钮 -->
+            <div class="p-6 bg-white border-t border-gray-200">
+                <div class="grid grid-cols-2 gap-4">
+                    <button class="py-3 border border-primary text-primary rounded-lg font-semibold">添加摄像头</button>
+                    <button class="py-3 bg-primary text-white rounded-lg font-semibold">完成</button>
+                </div>
+                <div class="mt-4 text-center">
+                    <a href="#" class="text-sm text-primary">查看设备使用指南</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 

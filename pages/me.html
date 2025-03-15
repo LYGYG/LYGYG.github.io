@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="app-container mx-auto">
+        <!-- 顶部用户信息区 -->
+        <div class="bg-primary text-white p-6 pb-16 relative">
+            <!-- 设置和消息按钮 -->
+            <div class="flex justify-between mb-6">
+                <button>
+                    <i class="fas fa-qrcode text-lg"></i>
+                </button>
+                <div class="flex space-x-4">
+                    <button>
+                        <i class="fas fa-bell text-lg"></i>
+                    </button>
+                    <button>
+                        <i class="fas fa-cog text-lg"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 用户信息 -->
+            <div class="flex items-center">
+                <div class="w-16 h-16 rounded-full bg-white p-0.5">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80" alt="用户头像" class="w-full h-full rounded-full object-cover">
+                </div>
+                <div class="ml-4">
+                    <h1 class="text-xl font-bold">张小明</h1>
+                    <p class="text-sm text-white text-opacity-80">高级会员</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 卡片区域 -->
+        <div class="px-4 -mt-10 relative z-10">
+            <!-- 会员卡片 -->
+            <div class="bg-white rounded-xl shadow-md p-4 mb-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="font-semibold">我的会员</h3>
+                    <button class="text-primary text-sm">
+                        <span>查看详情</span>
+                        <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-r from-primary to-blue-700 rounded-lg p-4 text-white">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h4 class="text-sm font-medium">高级会员</h4>
+                            <p class="text-xs text-white text-opacity-80 mt-1">有效期至: 2024年05月30日</p>
+                        </div>
+                        <div class="bg-yellow-400 text-yellow-800 text-xs font-medium px-2 py-1 rounded-full">
+                            PRO
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-3">
+                        <div class="flex-1 flex flex-col items-center justify-center py-2 bg-white bg-opacity-10 rounded-lg">
+                            <span class="text-lg font-semibold">5</span>
+                            <span class="text-xs">设备数量</span>
+                        </div>
+                        <div class="flex-1 flex flex-col items-center justify-center py-2 bg-white bg-opacity-10 rounded-lg">
+                            <span class="text-lg font-semibold">30天</span>
+                            <span class="text-xs">云存储</span>
+                        </div>
+                        <div class="flex-1 flex flex-col items-center justify-center py-2 bg-white bg-opacity-10 rounded-lg">
+                            <span class="text-lg font-semibold">1080p</span>
+                            <span class="text-xs">画质</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 我的设备 -->
+            <div class="bg-white rounded-xl shadow-md p-4 mb-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="font-semibold">我的设备</h3>
+                    <button class="text-primary text-sm">
+                        <span>管理</span>
+                        <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                    </button>
+                </div>
+                
+                <div class="space-y-4">
+                    <!-- 基站设备 -->
+                    <div class="flex items-center">
+                        <div class="relative mr-3">
+                            <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-broadcast-tower text-lg text-secondary"></i>
+                            </div>
+                            <div class="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between">
+                                <h4 class="font-medium">客厅基站</h4>
+                                <span class="text-xs text-green-600">在线</span>
+                            </div>
+                            <p class="text-xs text-gray-500">已连接2台摄像头</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 摄像头设备 -->
+                    <div class="flex items-center">
+                        <div class="relative mr-3">
+                            <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-video text-lg text-secondary"></i>
+                            </div>
+                            <div class="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between">
+                                <h4 class="font-medium">客厅摄像头</h4>
+                                <span class="text-xs text-green-600">在线</span>
+                            </div>
+                            <p class="text-xs text-gray-500">已开启移动侦测</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 摄像头设备 -->
+                    <div class="flex items-center">
+                        <div class="relative mr-3">
+                            <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-video text-lg text-secondary"></i>
+                            </div>
+                            <div class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full border-2 border-white"></div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between">
+                                <h4 class="font-medium">门口摄像头</h4>
+                                <span class="text-xs text-red-600">离线</span>
+                            </div>
+                            <p class="text-xs text-gray-500">上次在线: 12小时前</p>
+                        </div>
+                    </div>
+
+                    <!-- 添加设备按钮 -->
+                    <button class="w-full flex items-center justify-center py-2 border border-dashed border-gray-300 rounded-lg text-primary">
+                        <i class="fas fa-plus mr-2"></i>
+                        <span>添加设备</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 功能列表 -->
+            <div class="bg-white rounded-xl shadow-md p-4 mb-6">
+                <div class="grid grid-cols-4 gap-4">
+                    <a href="#" class="flex flex-col items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-1">
+                            <i class="fas fa-cloud-upload-alt text-secondary"></i>
+                        </div>
+                        <span class="text-xs">云存储</span>
+                    </a>
+                    
+                    <a href="#" class="flex flex-col items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-1">
+                            <i class="fas fa-download text-secondary"></i>
+                        </div>
+                        <span class="text-xs">本地存储</span>
+                    </a>
+                    
+                    <a href="#" class="flex flex-col items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-1">
+                            <i class="fas fa-share-alt text-secondary"></i>
+                        </div>
+                        <span class="text-xs">设备共享</span>
+                    </a>
+                    
+                    <a href="#" class="flex flex-col items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-1">
+                            <i class="fas fa-shield-alt text-secondary"></i>
+                        </div>
+                        <span class="text-xs">隐私设置</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 设置和支持 -->
+            <div class="bg-white rounded-xl shadow-md p-4 mb-6">
+                <div class="space-y-4">
+                    <a href="#" class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                                <i class="fas fa-user-shield text-secondary"></i>
+                            </div>
+                            <span>账户安全</span>
+                        </div>
+                        <i class="fas fa-chevron-right text-gray-400"></i>
+                    </a>
+                    
+                    <a href="#" class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                                <i class="fas fa-bell text-secondary"></i>
+                            </div>
+                            <span>消息通知</span>
+                        </div>
+                        <i class="fas fa-chevron-right text-gray-400"></i>
+                    </a>
+                    
+                    <a href="#" class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                                <i class="fas fa-headset text-secondary"></i>
+                            </div>
+                            <span>客服中心</span>
+                        </div>
+                        <i class="fas fa-chevron-right text-gray-400"></i>
+                    </a>
+                    
+                    <a href="#" class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                                <i class="fas fa-cog text-secondary"></i>
+                            </div>
+                            <span>系统设置</span>
+                        </div>
+                        <i class="fas fa-chevron-right text-gray-400"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <footer class="fixed bottom-0 w-full bg-white border-t border-gray-200 p-2">
+            <div class="flex justify-around">
+                <a href="#" class="text-center py-1 px-3 text-gray-500">
+                    <i class="fas fa-home text-xl"></i>
+                    <p class="text-xs mt-1">首页</p>
+                </a>
+                <a href="#" class="text-center py-1 px-3 text-gray-500">
+                    <i class="fas fa-video text-xl"></i>
+                    <p class="text-xs mt-1">视频</p>
+                </a>
+                <a href="#" class="text-center py-1 px-3 text-gray-500">
+                    <i class="fas fa-bell text-xl"></i>
+                    <p class="text-xs mt-1">提醒</p>
+                </a>
+                <a href="#" class="text-center py-1 px-3 text-primary">
+                    <i class="fas fa-user text-xl"></i>
+                    <p class="text-xs mt-1">我的</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

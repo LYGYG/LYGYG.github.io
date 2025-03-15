@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信号强度检测</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="app-container mx-auto">
+        <!-- 顶部导航栏 -->
+        <header class="bg-primary text-white p-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <button class="mr-3">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <h1 class="text-xl font-semibold">信号强度检测</h1>
+            </div>
+            <div>
+                <button>
+                    <i class="fas fa-question-circle"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="p-4">
+            <!-- 设备信息 -->
+            <div class="flex items-center bg-white p-4 rounded-lg shadow-sm mb-6">
+                <div class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center mr-3">
+                    <i class="fas fa-video text-2xl text-secondary"></i>
+                </div>
+                <div>
+                    <h3 class="font-semibold">室内摄像头 C1 Pro</h3>
+                    <p class="text-xs text-gray-500">已连接到客厅基站</p>
+                </div>
+            </div>
+
+            <!-- 信号强度显示 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+                <h3 class="font-semibold mb-4 text-center">当前信号强度</h3>
+                
+                <!-- 信号强度仪表盘 -->
+                <div class="w-48 h-48 mx-auto relative mb-6">
+                    <!-- 仪表盘背景 -->
+                    <div class="w-full h-full rounded-full border-8 border-gray-200 flex items-center justify-center">
+                        <!-- 信号强度指示器 -->
+                        <div class="w-full h-full rounded-full border-8 border-transparent border-t-green-500 border-r-green-500 border-b-green-500 transform -rotate-45"></div>
+                        
+                        <!-- 信号值显示 -->
+                        <div class="absolute inset-0 flex items-center justify-center flex-col">
+                            <span class="text-3xl font-bold text-green-500">80</span>
+                            <span class="text-sm text-gray-500">优秀</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 信号评级 -->
+                <div class="flex justify-between items-center px-4 mb-2">
+                    <div class="text-center">
+                        <div class="w-4 h-4 rounded-full bg-red-500 mx-auto mb-1"></div>
+                        <span class="text-xs">较差</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-4 h-4 rounded-full bg-yellow-500 mx-auto mb-1"></div>
+                        <span class="text-xs">一般</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-4 h-4 rounded-full bg-green-500 mx-auto mb-1"></div>
+                        <span class="text-xs">优秀</span>
+                    </div>
+                </div>
+                
+                <!-- 信号评级指示条 -->
+                <div class="h-2 w-full bg-gray-200 rounded-full overflow-hidden">
+                    <div class="h-full bg-green-500 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <!-- 信号详情 -->
+            <div class="bg-white p-4 rounded-lg shadow-sm mb-6">
+                <h3 class="font-semibold mb-3">信号详情</h3>
+                
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <i class="fas fa-wifi text-secondary mr-2"></i>
+                            <span class="text-sm">Wi-Fi信号</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex space-x-1 mr-2">
+                                <div class="w-1.5 h-4 bg-green-500 rounded-sm"></div>
+                                <div class="w-1.5 h-4 bg-green-500 rounded-sm"></div>
+                                <div class="w-1.5 h-4 bg-green-500 rounded-sm"></div>
+                                <div class="w-1.5 h-4 bg-green-500 rounded-sm"></div>
+                                <div class="w-1.5 h-4 bg-gray-300 rounded-sm"></div>
+                            </div>
+                            <span class="text-sm font-medium">强</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <i class="fas fa-exchange-alt text-secondary mr-2"></i>
+                            <span class="text-sm">网络延迟</span>
+                        </div>
+                        <span class="text-sm font-medium">28ms</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <i class="fas fa-arrow-down text-secondary mr-2"></i>
+                            <span class="text-sm">下载速度</span>
+                        </div>
+                        <span class="text-sm font-medium">4.2 Mbps</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center">
+                            <i class="fas fa-arrow-up text-secondary mr-2"></i>
+                            <span class="text-sm">上传速度</span>
+                        </div>
+                        <span class="text-sm font-medium">2.8 Mbps</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 优化建议 -->
+            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                <div class="flex items-start">
+                    <i class="fas fa-lightbulb text-yellow-500 mt-1 mr-3"></i>
+                    <div>
+                        <h4 class="font-semibold text-sm">优化建议</h4>
+                        <p class="text-xs text-gray-600 mt-1">当前信号状态良好，以下是进一步优化网络的建议：</p>
+                        <ul class="text-xs text-gray-600 mt-2 space-y-1">
+                            <li>• 确保摄像头与基站的距离不超过10米</li>
+                            <li>• 避免中间有墙壁或金属物体阻隔</li>
+                            <li>• 确保基站连接的路由器信号稳定</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部按钮 -->
+            <div class="flex space-x-3">
+                <button class="flex-1 py-3 border border-gray-300 rounded-lg font-semibold">重新检测</button>
+                <button class="flex-1 py-3 bg-primary text-white rounded-lg font-semibold">完成</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 
