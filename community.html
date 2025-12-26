@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社区 - 美容面罩</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-spa text-2xl text-pink-500 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">BeautyMask</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">首页</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">商城</a>
+                    <a href="#" class="text-pink-500 font-medium border-b-2 border-pink-500">社区</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-search text-gray-600 cursor-pointer hover:text-pink-500"></i>
+                    <i class="fas fa-shopping-cart text-gray-600 cursor-pointer hover:text-pink-500"></i>
+                    <i class="fas fa-user-circle text-gray-600 cursor-pointer hover:text-pink-500 text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid md:grid-cols-4 gap-8">
+            <!-- 左侧边栏 -->
+            <div class="hidden md:block">
+                <div class="bg-white rounded-xl shadow-md p-6 mb-6">
+                    <h3 class="font-semibold text-gray-800 mb-4">热门话题</h3>
+                    <div class="space-y-3">
+                        <a href="#" class="flex items-center justify-between text-gray-700 hover:text-pink-500">
+                            <span>#使用心得</span>
+                            <span class="text-gray-400 text-sm">1.2k</span>
+                        </a>
+                        <a href="#" class="flex items-center justify-between text-gray-700 hover:text-pink-500">
+                            <span>#效果对比</span>
+                            <span class="text-gray-400 text-sm">856</span>
+                        </a>
+                        <a href="#" class="flex items-center justify-between text-gray-700 hover:text-pink-500">
+                            <span>#新手教程</span>
+                            <span class="text-gray-400 text-sm">642</span>
+                        </a>
+                        <a href="#" class="flex items-center justify-between text-gray-700 hover:text-pink-500">
+                            <span>#产品推荐</span>
+                            <span class="text-gray-400 text-sm">523</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="font-semibold text-gray-800 mb-4">推荐用户</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" 
+                                 alt="用户" class="w-10 h-10 rounded-full mr-3">
+                            <div>
+                                <div class="font-medium text-gray-800 text-sm">小美</div>
+                                <div class="text-gray-500 text-xs">美妆达人</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=40&h=40&fit=crop" 
+                                 alt="用户" class="w-10 h-10 rounded-full mr-3">
+                            <div>
+                                <div class="font-medium text-gray-800 text-sm">Lisa</div>
+                                <div class="text-gray-500 text-xs">护肤专家</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 主内容区 -->
+            <div class="md:col-span-3">
+                <!-- 发布区域 -->
+                <div class="bg-white rounded-xl shadow-md p-6 mb-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop" 
+                             alt="头像" class="w-12 h-12 rounded-full mr-3">
+                        <input type="text" placeholder="分享你的使用心得..." 
+                               class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-pink-500">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex space-x-4 text-gray-600">
+                            <button class="flex items-center hover:text-pink-500">
+                                <i class="fas fa-image mr-2"></i>
+                                <span class="text-sm">图片</span>
+                            </button>
+                            <button class="flex items-center hover:text-pink-500">
+                                <i class="fas fa-video mr-2"></i>
+                                <span class="text-sm">视频</span>
+                            </button>
+                        </div>
+                        <button class="bg-pink-500 text-white px-6 py-2 rounded-lg hover:bg-pink-600 btn-animate">
+                            发布
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 筛选标签 -->
+                <div class="flex space-x-3 mb-6 overflow-x-auto">
+                    <button class="px-4 py-2 bg-pink-500 text-white rounded-full font-medium whitespace-nowrap">全部</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 whitespace-nowrap">最新</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 whitespace-nowrap">最热</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 whitespace-nowrap">精华</button>
+                </div>
+
+                <!-- 帖子列表 -->
+                <div class="space-y-6">
+                    <!-- 帖子1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop" 
+                                     alt="用户" class="w-12 h-12 rounded-full mr-3">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-800">小美</div>
+                                    <div class="text-gray-500 text-sm">2小时前 · 使用心得</div>
+                                </div>
+                                <button class="text-gray-400 hover:text-gray-600">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </div>
+                            <p class="text-gray-800 mb-4">使用一个月，皮肤明显改善！痘痘减少了，整体肤色也提亮了。每天坚持使用15分钟，效果真的很明显。推荐给大家！</p>
+                            <div class="grid grid-cols-3 gap-2 mb-4">
+                                <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=300&h=300&fit=crop" 
+                                     alt="图片1" class="w-full h-32 object-cover rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&h=300&fit=crop" 
+                                     alt="图片2" class="w-full h-32 object-cover rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1571875257727-256c39da42af?w=300&h=300&fit=crop" 
+                                     alt="图片3" class="w-full h-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex items-center justify-between text-gray-500">
+                                <div class="flex space-x-6">
+                                    <button class="flex items-center hover:text-pink-500">
+                                        <i class="far fa-heart mr-2"></i>
+                                        <span>128</span>
+                                    </button>
+                                    <button class="flex items-center hover:text-pink-500">
+                                        <i class="far fa-comment mr-2"></i>
+                                        <span>32</span>
+                                    </button>
+                                    <button class="flex items-center hover:text-pink-500">
+                                        <i class="far fa-share-square mr-2"></i>
+                                        <span>分享</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 帖子2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=50&h=50&fit=crop" 
+                                     alt="用户" class="w-12 h-12 rounded-full mr-3">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-800">Lisa</div>
+                                    <div class="text-gray-500 text-sm">5小时前 · 效果对比</div>
+                                </div>
+                                <span class="bg-pink-100 text-pink-500 text-xs px-2 py-1 rounded-full">精华</span>
+                            </div>
+                            <p class="text-gray-800 mb-4">分享我的使用心得和效果对比！使用前后对比图，真的变化很大。坚持就是胜利！</p>
+                            <div class="grid grid-cols-2 gap-2 mb-4">
+                                <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400&h=400&fit=crop" 
+                                     alt="对比图1" class="w-full h-48 object-cover rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop" 
+                                     alt="对比图2" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <div class="flex items-center justify-between text-gray-500">
+                                <div class="flex space-x-6">
+                                    <button class="flex items-center text-pink-500">
+                                        <i class="fas fa-heart mr-2"></i>
+                                        <span>256</span>
+                                    </button>
+                                    <button class="flex items-center hover:text-pink-500">
+                                        <i class="far fa-comment mr-2"></i>
+                                        <span>45</span>
+                                    </button>
+                                    <button class="flex items-center hover:text-pink-500">
+                                        <i class="far fa-share-square mr-2"></i>
+                                        <span>分享</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 帖子3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop" 
+                                     alt="用户" class="w-12 h-12 rounded-full mr-3">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-800">Amy</div>
+                                    <div class="text-gray-500 text-sm">1天前 · 新手教程</div>
+                                </div>
+                            </div>
+                            <p class="text-gray-800 mb-4">新手使用指南，超详细！从开箱到使用，一步步教你如何使用智能面罩，包括APP连接、模式选择等。</p>
+                            <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?w=600&h=300&fit=crop" 
+                                 alt="教程图" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <div class="flex items-center justify-between text-gray-500">
+                                <div class="flex space-x-6">
+                                    <button class="flex items-center hover:text-pink-500">
+                                        <i class="far fa-heart mr-2"></i>
+                                        <span>189</span>
+                                    </button>
+                                    <button class="flex items-center hover:text-pink-500">
+                                        <i class="far fa-comment mr-2"></i>
+                                        <span>67</span>
+                                    </button>
+                                    <button class="flex items-center hover:text-pink-500">
+                                        <i class="far fa-share-square mr-2"></i>
+                                        <span>分享</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 加载更多 -->
+                <div class="text-center mt-8">
+                    <button class="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
+                        加载更多
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

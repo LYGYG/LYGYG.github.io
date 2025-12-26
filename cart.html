@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车 - 美容面罩</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-spa text-2xl text-pink-500 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">BeautyMask</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">首页</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">商城</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">社区</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-search text-gray-600 cursor-pointer hover:text-pink-500"></i>
+                    <i class="fas fa-shopping-cart text-pink-500 cursor-pointer"></i>
+                    <i class="fas fa-user-circle text-gray-600 cursor-pointer hover:text-pink-500 text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6">购物车 (3)</h1>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- 购物车列表 -->
+            <div class="md:col-span-2 space-y-4">
+                <!-- 全选 -->
+                <div class="bg-white rounded-xl shadow-md p-4">
+                    <label class="flex items-center">
+                        <input type="checkbox" checked class="w-5 h-5 text-pink-500 rounded">
+                        <span class="ml-3 text-gray-700 font-medium">全选</span>
+                    </label>
+                </div>
+
+                <!-- 商品1 -->
+                <div class="bg-white rounded-xl shadow-md p-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" checked class="w-5 h-5 text-pink-500 rounded mr-4">
+                        <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=150&h=150&fit=crop" 
+                             alt="商品" class="w-24 h-24 rounded-lg object-cover mr-4">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-gray-800 mb-1">智能光疗面罩 Pro</h3>
+                            <p class="text-gray-500 text-sm mb-2">颜色：粉色</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-pink-500 font-bold text-lg">¥1,299</div>
+                                <div class="flex items-center space-x-3">
+                                    <button class="w-8 h-8 border border-gray-300 rounded-lg hover:bg-gray-100">
+                                        <i class="fas fa-minus text-xs"></i>
+                                    </button>
+                                    <span class="w-12 text-center">1</span>
+                                    <button class="w-8 h-8 border border-gray-300 rounded-lg hover:bg-gray-100">
+                                        <i class="fas fa-plus text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 ml-4">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 商品2 -->
+                <div class="bg-white rounded-xl shadow-md p-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" checked class="w-5 h-5 text-pink-500 rounded mr-4">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=150&h=150&fit=crop" 
+                             alt="商品" class="w-24 h-24 rounded-lg object-cover mr-4">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-gray-800 mb-1">基础款美容面罩</h3>
+                            <p class="text-gray-500 text-sm mb-2">颜色：白色</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-pink-500 font-bold text-lg">¥899</div>
+                                <div class="flex items-center space-x-3">
+                                    <button class="w-8 h-8 border border-gray-300 rounded-lg hover:bg-gray-100">
+                                        <i class="fas fa-minus text-xs"></i>
+                                    </button>
+                                    <span class="w-12 text-center">1</span>
+                                    <button class="w-8 h-8 border border-gray-300 rounded-lg hover:bg-gray-100">
+                                        <i class="fas fa-plus text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 ml-4">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 商品3 -->
+                <div class="bg-white rounded-xl shadow-md p-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" checked class="w-5 h-5 text-pink-500 rounded mr-4">
+                        <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=150&h=150&fit=crop" 
+                             alt="商品" class="w-24 h-24 rounded-lg object-cover mr-4">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-gray-800 mb-1">专用清洁套装</h3>
+                            <p class="text-gray-500 text-sm mb-2">规格：标准装</p>
+                            <div class="flex items-center justify-between">
+                                <div class="text-pink-500 font-bold text-lg">¥199</div>
+                                <div class="flex items-center space-x-3">
+                                    <button class="w-8 h-8 border border-gray-300 rounded-lg hover:bg-gray-100">
+                                        <i class="fas fa-minus text-xs"></i>
+                                    </button>
+                                    <span class="w-12 text-center">2</span>
+                                    <button class="w-8 h-8 border border-gray-300 rounded-lg hover:bg-gray-100">
+                                        <i class="fas fa-plus text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="text-gray-400 hover:text-red-500 ml-4">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 结算栏 -->
+            <div class="md:col-span-1">
+                <div class="bg-white rounded-xl shadow-md p-6 sticky top-24">
+                    <h3 class="font-semibold text-gray-800 mb-4">订单摘要</h3>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between text-gray-600">
+                            <span>商品小计</span>
+                            <span>¥2,397</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600">
+                            <span>运费</span>
+                            <span class="text-green-600">免费</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600">
+                            <span>优惠券</span>
+                            <span class="text-pink-500">-¥50</span>
+                        </div>
+                        <div class="border-t pt-3">
+                            <div class="flex justify-between text-lg font-bold text-gray-800">
+                                <span>总计</span>
+                                <span class="text-pink-500">¥2,347</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full bg-pink-500 text-white py-4 rounded-lg font-semibold hover:bg-pink-600 btn-animate mb-4">
+                        去结算
+                    </button>
+                    <div class="text-center text-sm text-gray-500">
+                        <i class="fas fa-shield-alt mr-1"></i>
+                        安全支付保障
+                    </div>
+                </div>
+
+                <!-- 推荐商品 -->
+                <div class="bg-white rounded-xl shadow-md p-6 mt-6">
+                    <h3 class="font-semibold text-gray-800 mb-4">为你推荐</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1571875257727-256c39da42af?w=100&h=100&fit=crop" 
+                                 alt="推荐" class="w-16 h-16 rounded-lg object-cover mr-3">
+                            <div class="flex-1">
+                                <div class="text-sm font-semibold text-gray-800">便携式美容仪</div>
+                                <div class="text-pink-500 font-bold text-sm">¥599</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?w=100&h=100&fit=crop" 
+                                 alt="推荐" class="w-16 h-16 rounded-lg object-cover mr-3">
+                            <div class="flex-1">
+                                <div class="text-sm font-semibold text-gray-800">无线充电底座</div>
+                                <div class="text-pink-500 font-bold text-sm">¥299</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
