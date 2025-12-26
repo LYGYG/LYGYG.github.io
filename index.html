@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - 美容面罩</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .page-content {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="page-content">
+        <!-- 导航栏 -->
+        <nav class="bg-white shadow-sm sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center">
+                        <i class="fas fa-spa text-2xl text-pink-500 mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">BeautyMask</span>
+                    </div>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">首页</a>
+                        <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">商城</a>
+                        <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">社区</a>
+                        <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">关于</a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-search text-gray-600 cursor-pointer hover:text-pink-500"></i>
+                        <i class="fas fa-shopping-cart text-gray-600 cursor-pointer hover:text-pink-500"></i>
+                        <i class="fas fa-user-circle text-gray-600 cursor-pointer hover:text-pink-500 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 促销横幅 -->
+        <div class="bg-pink-600 text-white text-center py-2 text-sm">
+            <span>🎄 限时优惠！首单立减10% | 全场包邮 | 双人购买最高省¥200</span>
+        </div>
+
+        <!-- Hero区域 -->
+        <section class="relative bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="inline-block bg-red-500 text-white text-xs px-3 py-1 rounded-full mb-4">热销中</div>
+                        <h1 class="text-5xl font-bold mb-6 text-gray-800">智能LED光疗面罩</h1>
+                        <p class="text-xl mb-6 text-gray-600">科学验证，非侵入式美容。促进胶原蛋白生成，让肌肤更紧致、更年轻</p>
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 mr-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="text-gray-600">4.9分 (128条评价)</span>
+                            </div>
+                            <div class="text-3xl font-bold text-pink-500 mb-2">¥1,299</div>
+                            <div class="text-gray-400 line-through">原价 ¥1,599</div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <button class="bg-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-pink-600 btn-animate">
+                                立即购买
+                            </button>
+                            <button class="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:border-pink-500 hover:text-pink-500 btn-animate">
+                                了解更多
+                            </button>
+                        </div>
+                        <div class="mt-6 flex items-center space-x-6 text-sm text-gray-600">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>SGS认证</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>临床验证</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>全球包邮</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=600&fit=crop" 
+                             alt="美容面罩" class="rounded-2xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 科学背书 -->
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">科学验证 · 非侵入式</h2>
+                    <p class="text-gray-600">临床验证的LED设备，促进胶原蛋白生成，让肌肤更紧致、更年轻</p>
+                </div>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg p-6 text-center card-hover">
+                        <i class="fas fa-certificate text-3xl text-pink-500 mb-3"></i>
+                        <h3 class="font-semibold mb-2">SGS认证</h3>
+                        <p class="text-sm text-gray-600">国际权威认证</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 text-center card-hover">
+                        <i class="fas fa-flask text-3xl text-pink-500 mb-3"></i>
+                        <h3 class="font-semibold mb-2">临床验证</h3>
+                        <p class="text-sm text-gray-600">科学验证有效</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 text-center card-hover">
+                        <i class="fas fa-users text-3xl text-pink-500 mb-3"></i>
+                        <h3 class="font-semibold mb-2">30k+用户</h3>
+                        <p class="text-sm text-gray-600">值得信赖</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 text-center card-hover">
+                        <i class="fas fa-star text-3xl text-pink-500 mb-3"></i>
+                        <h3 class="font-semibold mb-2">4.9分好评</h3>
+                        <p class="text-sm text-gray-600">用户满意度高</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品特色 -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">你的肌肤目标是什么？</h2>
+                <p class="text-center text-gray-600 mb-8">找到适合你的设备，获得临床验证的效果，让肌肤更清晰、更健康</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center card-hover p-6 rounded-xl border border-gray-200">
+                        <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-lightbulb text-2xl text-pink-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">智能光疗</h3>
+                        <p class="text-gray-600">采用LED光疗技术，多种模式可选</p>
+                    </div>
+                    <div class="text-center card-hover p-6 rounded-xl border border-gray-200">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-mobile-alt text-2xl text-purple-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">APP控制</h3>
+                        <p class="text-gray-600">手机APP远程控制，个性化设置</p>
+                    </div>
+                    <div class="text-center card-hover p-6 rounded-xl border border-gray-200">
+                        <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shield-alt text-2xl text-indigo-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">安全舒适</h3>
+                        <p class="text-gray-600">医用级材料，安全无刺激</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 热门产品 -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-800">精选产品</h2>
+                    <a href="#" class="text-pink-500 hover:text-pink-600 font-medium">查看全部 <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover relative">
+                        <div class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">热销</div>
+                        <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&h=300&fit=crop" 
+                             alt="产品1" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 text-xs mr-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="text-gray-500 text-xs">4.9</span>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 mb-2">智能光疗面罩 Pro</h3>
+                            <div class="flex items-center">
+                                <span class="text-pink-500 text-xl font-bold">¥1,299</span>
+                                <span class="text-gray-400 line-through text-sm ml-2">¥1,599</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover relative">
+                        <div class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">新品</div>
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop" 
+                             alt="产品2" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 text-xs mr-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="text-gray-500 text-xs">4.7</span>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 mb-2">基础款美容面罩</h3>
+                            <div class="flex items-center">
+                                <span class="text-pink-500 text-xl font-bold">¥899</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                        <img src="https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=300&fit=crop" 
+                             alt="产品3" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 text-xs mr-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-xs">4.8</span>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 mb-2">便携式美容仪</h3>
+                            <div class="flex items-center">
+                                <span class="text-pink-500 text-xl font-bold">¥599</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                        <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400&h=300&fit=crop" 
+                             alt="产品4" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 text-xs mr-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="text-gray-500 text-xs">5.0</span>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 mb-2">专业护理套装</h3>
+                            <div class="flex items-center">
+                                <span class="text-pink-500 text-xl font-bold">¥1,599</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户评价 -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">客户评价</h2>
+                    <div class="flex items-center justify-center mb-4">
+                        <div class="flex text-yellow-400 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-gray-800">4.94</span>
+                    </div>
+                    <p class="text-gray-600">已获得30,000+客户的信赖</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 社区动态 -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-800">社区动态</h2>
+                    <a href="#" class="text-pink-500 hover:text-pink-600 font-medium">查看更多 <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=250&fit=crop" 
+                             alt="动态1" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <div class="flex items-center mb-2">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop" 
+                                     alt="用户" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm font-medium text-gray-700">小美</span>
+                            </div>
+                            <p class="text-gray-800 mb-2">使用一个月，皮肤明显改善！</p>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="fas fa-heart mr-1"></i>
+                                <span class="mr-4">128</span>
+                                <i class="fas fa-comment mr-1"></i>
+                                <span>32</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=250&fit=crop" 
+                             alt="动态2" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <div class="flex items-center mb-2">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=40&h=40&fit=crop" 
+                                     alt="用户" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm font-medium text-gray-700">Lisa</span>
+                            </div>
+                            <p class="text-gray-800 mb-2">分享我的使用心得和效果对比</p>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="fas fa-heart mr-1"></i>
+                                <span class="mr-4">256</span>
+                                <i class="fas fa-comment mr-1"></i>
+                                <span>45</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" 
+                             alt="动态3" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <div class="flex items-center mb-2">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=40&h=40&fit=crop" 
+                                     alt="用户" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm font-medium text-gray-700">Amy</span>
+                            </div>
+                            <p class="text-gray-800 mb-2">新手使用指南，超详细！</p>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="fas fa-heart mr-1"></i>
+                                <span class="mr-4">189</span>
+                                <i class="fas fa-comment mr-1"></i>
+                                <span>67</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 底部 -->
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-spa text-2xl text-pink-500 mr-2"></i>
+                            <span class="text-xl font-bold">BeautyMask</span>
+                        </div>
+                        <p class="text-gray-400">让美丽触手可及</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">产品</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white">智能面罩</a></li>
+                            <li><a href="#" class="hover:text-white">配件</a></li>
+                            <li><a href="#" class="hover:text-white">应用下载</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">支持</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white">帮助中心</a></li>
+                            <li><a href="#" class="hover:text-white">联系我们</a></li>
+                            <li><a href="#" class="hover:text-white">售后服务</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">关注我们</h4>
+                        <div class="flex space-x-4">
+                            <i class="fab fa-weibo text-2xl text-gray-400 hover:text-white cursor-pointer"></i>
+                            <i class="fab fa-wechat text-2xl text-gray-400 hover:text-white cursor-pointer"></i>
+                            <i class="fab fa-qq text-2xl text-gray-400 hover:text-white cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                    <p>&copy; 2024 BeautyMask. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
