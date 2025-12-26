@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城 - 美容面罩</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-spa text-2xl text-pink-500 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">BeautyMask</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">首页</a>
+                    <a href="#" class="text-pink-500 font-medium border-b-2 border-pink-500">商城</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">社区</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-500 font-medium">关于</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-search text-gray-600 cursor-pointer hover:text-pink-500"></i>
+                    <i class="fas fa-shopping-cart text-gray-600 cursor-pointer hover:text-pink-500"></i>
+                    <i class="fas fa-user-circle text-gray-600 cursor-pointer hover:text-pink-500 text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 分类筛选 -->
+    <div class="bg-white border-b sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex space-x-6 overflow-x-auto">
+                    <button class="px-4 py-2 bg-pink-500 text-white rounded-full font-medium whitespace-nowrap">全部</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 whitespace-nowrap">智能面罩</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 whitespace-nowrap">配件</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 whitespace-nowrap">套装</button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 whitespace-nowrap">新品</button>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm">
+                        <option>价格：低到高</option>
+                        <option>价格：高到低</option>
+                        <option>最新上架</option>
+                        <option>销量最高</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 产品列表 -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- 产品卡片 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&h=300&fit=crop" 
+                         alt="产品" class="w-full h-48 object-cover">
+                    <span class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">热销</span>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 text-sm">智能光疗面罩 Pro</h3>
+                    <p class="text-gray-500 text-xs mb-2 line-clamp-2">LED光疗技术，多种模式，APP控制</p>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-2">(128)</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-pink-500 text-lg font-bold">¥1,299</span>
+                        <button class="bg-pink-500 text-white px-4 py-1 rounded-full text-sm hover:bg-pink-600 btn-animate">
+                            <i class="fas fa-cart-plus mr-1"></i>加购
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop" 
+                         alt="产品" class="w-full h-48 object-cover">
+                    <span class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">新品</span>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 text-sm">基础款美容面罩</h3>
+                    <p class="text-gray-500 text-xs mb-2 line-clamp-2">入门级选择，性价比之选</p>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-2">(89)</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-pink-500 text-lg font-bold">¥899</span>
+                        <button class="bg-pink-500 text-white px-4 py-1 rounded-full text-sm hover:bg-pink-600 btn-animate">
+                            <i class="fas fa-cart-plus mr-1"></i>加购
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=300&fit=crop" 
+                         alt="产品" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 text-sm">便携式美容仪</h3>
+                    <p class="text-gray-500 text-xs mb-2 line-clamp-2">小巧便携，随时随地护理</p>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-2">(156)</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-pink-500 text-lg font-bold">¥599</span>
+                        <button class="bg-pink-500 text-white px-4 py-1 rounded-full text-sm hover:bg-pink-600 btn-animate">
+                            <i class="fas fa-cart-plus mr-1"></i>加购
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400&h=300&fit=crop" 
+                         alt="产品" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 text-sm">专业护理套装</h3>
+                    <p class="text-gray-500 text-xs mb-2 line-clamp-2">全套护理方案，专业级体验</p>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-2">(203)</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-pink-500 text-lg font-bold">¥1,599</span>
+                        <button class="bg-pink-500 text-white px-4 py-1 rounded-full text-sm hover:bg-pink-600 btn-animate">
+                            <i class="fas fa-cart-plus mr-1"></i>加购
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" 
+                         alt="产品" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 text-sm">LED光疗面罩升级版</h3>
+                    <p class="text-gray-500 text-xs mb-2 line-clamp-2">升级版LED技术，更强效果</p>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-2">(67)</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-pink-500 text-lg font-bold">¥1,499</span>
+                        <button class="bg-pink-500 text-white px-4 py-1 rounded-full text-sm hover:bg-pink-600 btn-animate">
+                            <i class="fas fa-cart-plus mr-1"></i>加购
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?w=400&h=300&fit=crop" 
+                         alt="产品" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 text-sm">无线充电底座</h3>
+                    <p class="text-gray-500 text-xs mb-2 line-clamp-2">便捷充电，随放随充</p>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-2">(94)</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-pink-500 text-lg font-bold">¥299</span>
+                        <button class="bg-pink-500 text-white px-4 py-1 rounded-full text-sm hover:bg-pink-600 btn-animate">
+                            <i class="fas fa-cart-plus mr-1"></i>加购
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=300&fit=crop" 
+                         alt="产品" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 text-sm">专用清洁套装</h3>
+                    <p class="text-gray-500 text-xs mb-2 line-clamp-2">专业清洁，保持卫生</p>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-2">(112)</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-pink-500 text-lg font-bold">¥199</span>
+                        <button class="bg-pink-500 text-white px-4 py-1 rounded-full text-sm hover:bg-pink-600 btn-animate">
+                            <i class="fas fa-cart-plus mr-1"></i>加购
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400&h=300&fit=crop" 
+                         alt="产品" class="w-full h-48 object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 text-sm">旅行收纳包</h3>
+                    <p class="text-gray-500 text-xs mb-2 line-clamp-2">便携收纳，出行必备</p>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-2">(78)</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-pink-500 text-lg font-bold">¥149</span>
+                        <button class="bg-pink-500 text-white px-4 py-1 rounded-full text-sm hover:bg-pink-600 btn-animate">
+                            <i class="fas fa-cart-plus mr-1"></i>加购
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 分页 -->
+        <div class="flex justify-center items-center mt-12 space-x-2">
+            <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="px-4 py-2 bg-pink-500 text-white rounded-lg">1</button>
+            <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">2</button>
+            <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">3</button>
+            <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+
